@@ -23,3 +23,8 @@ http://lists.whatwg.org/pipermail/whatwg-whatwg.org/2014-May/254198.html
 */
 [hidden] { display: none !important; }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
