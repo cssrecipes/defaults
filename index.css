@@ -13,7 +13,7 @@ usually want the image and preferably its center (not the top-right corner)
 */
 *:not(body) {
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50%;
   background-size: cover;
 }
 
