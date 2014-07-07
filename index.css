@@ -1,16 +1,44 @@
-/* http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+/*
+ * Using html & * inherit make it simpler default behavior on a standalone part
+ */
+html {
+    /*
+     * box model like it should be
+     * 
+     * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+     */
+    box-sizing: border-box;
+    
+    /*
+     * - avoid weird background & content overflow by default for fixed size (scrollbars)
+     * - clearfix are useless
+     * - avoid collapsing margins by default
+     * - let box-shadow works (hidden doesn't do that)
+     * 
+     * http://bocoup.com/weblog/new-overflow-default/ 
+     */
+    overflow: auto;
+    
+    /*
+     * tables borders like they should be
+     * applied to * to also works for display: table;
+     */
+    border-collapse: collapse;
+}
+
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
+    box-sizing: inherit;
+    overflow: inherit;
 }
 
-* { border-collapse: collapse; }
+* { border-collapse: inherit; }
 
 /*
-Repeating the background mostly makes sense in the <body>. Otherwise, people
-usually want the image and preferably its center (not the top-right corner)
-*/
+ * Repeating the background mostly makes sense in the <body>. Otherwise, people
+ * usually want the image and preferably its center (not the top-right corner)
+ */
 *:not(body) {
   background-repeat: no-repeat;
   background-position: 50%;
@@ -18,11 +46,14 @@ usually want the image and preferably its center (not the top-right corner)
 }
 
 /*
-Makes the hidden attribute works even when an element is styled display: flex
-http://lists.whatwg.org/pipermail/whatwg-whatwg.org/2014-May/254198.html
-*/
+ * Makes the hidden attribute works even when an element is styled display: flex
+ * http://lists.whatwg.org/pipermail/whatwg-whatwg.org/2014-May/254198.html
+ */
 [hidden] { display: none !important; }
 
+/* 
+ * kill document defaults margin & padding. We all do that all the times, right ?
+ */
 html,
 body {
   margin: 0;
