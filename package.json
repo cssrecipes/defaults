@@ -1,24 +1,38 @@
 {
-	"name": "cssrecipes-defaults",
-	"version": "0.1.0",
-	"description": "Just a few handy default styles",
-	"main": "index.css",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/cssrecipes/defaults.git"
-	},
-	"keywords": [
-		"css",
-		"cssrecipes",
-		"defaults"
-	],
-	"author": "MoOx <m@moox.io>",
-	"license": "MIT",
-	"bugs": {
-		"url": "https://github.com/cssrecipes/defaults/issues"
-	},
-	"homepage": "https://github.com/cssrecipes/defaults"
+  "name": "cssrecipes-defaults",
+  "version": "0.1.0",
+  "description": "Just a few handy default styles",
+  "main": "index.css",
+  "style": "index.css",
+  "files": [
+    "lib",
+    "index.css"
+  ],
+  "devDependencies": {
+    "myth": "^1.0.0"
+  },
+  "scripts": {
+    "setup": "npm install && mkdir -p build",
+    "preprocess": "myth index.css build/index.css",
+    "build": "npm run setup && npm run preprocess",
+    "preprocess-test": "myth test/test.css build/test.css",
+    "build-test": "npm run setup && npm run preprocess-test",
+    "test": "npm run build-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cssrecipes/defaults.git"
+  },
+  "keywords": [
+    "browser",
+    "style",
+    "css",
+    "css-components",
+    "css-recipes",
+    "cssrecipes",
+    "recipes",
+    "defaults"
+  ],
+  "author": "MoOx <m@moox.io>",
+  "license": "MIT"
 }
