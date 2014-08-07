@@ -26,6 +26,18 @@ html {
     border-collapse: collapse;
 }
 
+/* 
+ * Why inherit ?
+ * If you have a component and his children not using border-box for example:
+ * 
+ * Without inherit you might need
+ * .Component, .Component * { box-sizing: content-box }
+ *
+ * With inherit you can just write
+ * .Component { box-sizing: content-box }
+ * 
+ * http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
 *,
 *:before,
 *:after {
