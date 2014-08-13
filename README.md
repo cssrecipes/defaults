@@ -4,7 +4,7 @@
 
 ## Install
 
-		npm install cssrecipes-defaults
+    $ npm install cssrecipes-defaults
 
 ## Credits
 
