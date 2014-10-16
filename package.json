@@ -2,6 +2,20 @@
   "name": "cssrecipes-defaults",
   "version": "0.2.0",
   "description": "Just a few handy default styles",
+  "keywords": [
+    "browser",
+    "style",
+    "css",
+    "css-components",
+    "css-recipes",
+    "cssrecipes",
+    "recipes",
+    "defaults"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cssrecipes/defaults.git"
+  },
   "author": "Maxime Thirouin",
   "license": "MIT",
   "main": "index.css",
@@ -20,19 +34,5 @@
     "preprocess-test": "myth test/test.css build/test.css",
     "build-test": "npm run setup && npm run preprocess-test",
     "test": "npm run build-test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/cssrecipes/defaults.git"
-  },
-  "keywords": [
-    "browser",
-    "style",
-    "css",
-    "css-components",
-    "css-recipes",
-    "cssrecipes",
-    "recipes",
-    "defaults"
-  ],
+  }
 }
