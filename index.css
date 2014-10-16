@@ -10,16 +10,6 @@ html {
     box-sizing: border-box;
     
     /*
-     * - avoid weird background & content overflow by default for fixed size (scrollbars)
-     * - clearfix are useless
-     * - avoid collapsing margins by default
-     * - let box-shadow works (hidden doesn't do that)
-     * 
-     * http://bocoup.com/weblog/new-overflow-default/ 
-     */
-    overflow: auto;
-    
-    /*
      * tables borders like they should be
      * applied to * to also works for display: table;
      */
@@ -42,7 +32,6 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
-    overflow: inherit;
 }
 
 * { border-collapse: inherit; }
