@@ -2,6 +2,8 @@
   "name": "cssrecipes-defaults",
   "version": "0.2.0",
   "description": "Just a few handy default styles",
+  "author": "Maxime Thirouin",
+  "license": "MIT",
   "main": "index.css",
   "style": "index.css",
   "files": [
@@ -33,6 +35,4 @@
     "recipes",
     "defaults"
   ],
-  "author": "MoOx <m@moox.io>",
-  "license": "MIT"
 }
