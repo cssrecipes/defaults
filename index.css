@@ -2,36 +2,36 @@
  * Using html & * inherit make it simpler default behavior on a standalone part
  */
 html {
-    /*
-     * box model like it should be
-     * 
-     * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
-     */
-    box-sizing: border-box;
-    
-    /*
-     * tables borders like they should be
-     * applied to * to also works for display: table;
-     */
-    border-collapse: collapse;
+  /*
+   * box model like it should be
+   *
+   * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+   */
+  box-sizing: border-box;
+
+  /*
+   * tables borders like they should be
+   * applied to * to also works for display: table;
+   */
+  border-collapse: collapse;
 }
 
-/* 
+/*
  * Why inherit ?
  * If you have a component and his children not using border-box for example:
- * 
+ *
  * Without inherit you might need
  * .Component, .Component * { box-sizing: content-box }
  *
  * With inherit you can just write
  * .Component { box-sizing: content-box }
- * 
+ *
  * http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
  */
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 * { border-collapse: inherit; }
@@ -52,7 +52,7 @@ html {
  */
 [hidden] { display: none !important; }
 
-/* 
+/*
  * kill document defaults margin & padding. We all do that all the times, right ?
  */
 html,
