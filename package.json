@@ -25,13 +25,13 @@
     "index.css"
   ],
   "devDependencies": {
-    "myth": "^1.0.0"
+    "cssnext": "^0.4.0"
   },
   "scripts": {
     "setup": "npm install && mkdir -p build",
-    "preprocess": "myth index.css build/index.css",
+    "preprocess": "cssnext index.css build/index.css",
     "build": "npm run setup && npm run preprocess",
-    "preprocess-test": "myth test/test.css build/test.css",
+    "preprocess-test": "cssnext test/test.css build/test.css",
     "build-test": "npm run setup && npm run preprocess-test",
     "test": "npm run build-test"
   }
