@@ -48,7 +48,7 @@ html {
 
 /*
  * Makes the hidden attribute works even when an element is styled display: flex
- * http://lists.whatwg.org/pipermail/whatwg-whatwg.org/2014-May/254198.html
+ * http://lists.w3.org/Archives/Public/public-whatwg-archive/2014May/0001.html
  */
 [hidden] { display: none !important; }
 
