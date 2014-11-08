@@ -8,6 +8,17 @@
 $ npm install cssrecipes-defaults
 ```
 
+## Usage
+
+```css
+@import "./node_modules/cssrecipes-defaults/index.css";
+```
+
+```html
+<html class="r-Defaults">
+<!-- your content-->
+```
+
 ## Credits
 
 [@DavidBruant's _Better CSS defaults_](https://github.com/DavidBruant/Better-CSS-defaults/)

@@ -1,3 +1,7 @@
+# 0.4.0 - 2014-11-08
+
+- update org prefix to `r`
+
 # 0.3.0 - 2014-10-16
 
 - remove overflow: auto (cause to much trouble with existing css & others libs)
