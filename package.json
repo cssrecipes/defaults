@@ -21,6 +21,8 @@
   "main": "index.css",
   "style": "index.css",
   "files": [
+    "CHANGELOG.md",
+    "LICENSE",
     "lib",
     "index.css"
   ],
