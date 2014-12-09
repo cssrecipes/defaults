@@ -1,22 +1,6 @@
 /*
- * Using html & * inherit make it simpler default behavior on a standalone part
- */
-.r-Defaults {
-  /*
-   * box model like it should be
-   *
-   * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
-   */
-  box-sizing: border-box;
-
-  /*
-   * tables borders like they should be
-   * applied to * to also works for display: table;
-   */
-  border-collapse: collapse;
-}
-
-/*
+ * Some defaults are based on inherit
+ *
  * Why inherit ?
  * If you have a component and his children not using border-box for example:
  *
@@ -28,35 +12,8 @@
  *
  * http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
  */
-.r-Defaults *,
-.r-Defaults *:before,
-.r-Defaults *:after {
-  box-sizing: inherit;
-}
-
-.r-Defaults * { border-collapse: inherit; }
-
-/*
- * Repeating the background mostly makes sense in the <body>. Otherwise, people
- * usually want the image and preferably its center (not the top-right corner)
- */
-.r-Defaults *:not(body) {
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: cover;
-}
-
-/*
- * Makes the hidden attribute works even when an element is styled display: flex
- * http://lists.w3.org/Archives/Public/public-whatwg-archive/2014May/0001.html
- */
-.r-Defaults [hidden] { display: none !important; }
-
-/*
- * kill document defaults margin & padding. We all do that all the times, right ?
- */
-.r-Defaults,
-.r-Defaults body {
-  margin: 0;
-  padding: 0;
-}
+@import "lib/background.css";
+@import "lib/border-collapse.css";
+@import "lib/box-sizing.css";
+@import "lib/document-remove-margin-padding.css";
+@import "lib/hidden.css";

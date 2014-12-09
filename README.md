@@ -1,6 +1,6 @@
 # Defaults
 
-> Just a few handy default styles
+> Just a few handy default styles for your `<html>` pages
 
 ## Install
 
@@ -14,10 +14,7 @@ $ npm install cssrecipes-defaults
 @import "./node_modules/cssrecipes-defaults/index.css";
 ```
 
-```html
-<html class="r-Defaults">
-<!-- your content-->
-```
+_This library output non scoped CSS (might html, body, etc). Use carefuly._
 
 ## Credits
 

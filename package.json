@@ -1,7 +1,7 @@
 {
   "name": "cssrecipes-defaults",
   "version": "0.4.0",
-  "description": "Just a few handy default styles",
+  "description": "Just a few handy default styles for your `<html>` pages",
   "keywords": [
     "browser",
     "style",
@@ -27,7 +27,7 @@
     "index.css"
   ],
   "devDependencies": {
-    "cssnext": "^0.4.0"
+    "cssnext": "^0.6.0"
   },
   "scripts": {
     "setup": "npm install && mkdir -p build",

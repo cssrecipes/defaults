@@ -1,0 +1,6 @@
+/*
+ * tables borders like they should be
+ * applied to * to also works for display: table;
+ */
+html {border-collapse: collapse}
+* {border-collapse: inherit}

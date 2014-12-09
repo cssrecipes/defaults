@@ -1,0 +1,8 @@
+/*
+ * kill document defaults margin & padding. We all do that all the times, right ?
+ */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
